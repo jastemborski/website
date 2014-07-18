@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+
+      * {
+            margin: 0;
+            padding: 0;
+          }
+      ul {
+          overflow: hidden;
+          position: fixed;
+          margin:-10px;
+          padding:0;
+          width: 100%;
+          height: 49px;
+          background:#21160C;
+          text-align:center;
+          position: fixed;
+          top: 0;
+          z-index: 1; /* what does this do? */
+
+
+      }
+
+      li{
+          float: left;
+          text-align:center;
+
+      }
+
+      a {
+          display: inline-block;
+          width: 100px;
+          color: #F5F5F5;
+          padding: 20px;
+          text-decoration: none;
+          font-family: Quicksand-Regular ;
+
+
+      }
+    
+    @font-face {
+    font-family: Quicksand-Regular;
+    src:url(Quicksand-Regular.otf);
+    }
+
+      #page2{
+         width: 750px;
+         height: 1000px;
+         font-family: Arial, Verdana, sans-serif;
+         color: black;
+       }
+
+    .background.stellar{ 
+      background-attachment: fixed;
+      background-position: 0% 0;
+      background-repeat: no-repeat;
+      height: 700px;
+      positionProperty: 'transform'
+
+ 
+    }
+
+      
+  </style>
+
+    <script src="/Users/Borski/Desktop/Web apps/homepage/jquery.min.js"></script>
+
+    <script src="/Users/Borski/Desktop/Web apps/homepage/js/stellar.js"></script>
+
+    <script>
+    $(function(){
+      $.stellar({
+        horizontalScrolling: false,
+        verticalOffset: 20
+      });
+    });
+    </script>
+
+  </head>
+
+  <body>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav id="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">About me</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+  <div class="background" id="home" >
+    <img src="/Users/Borski/Desktop/Web apps/homepage/background.jpg" alt="Bird" width="1350px" height="773px" />
+  </div>
+
+    </div>
+
+    <div id="page2">
+      <a id="portfolio"></a>       
+    </div>
+
+    <div class="background" id="page3" >
+      <a id="contact"></a>
+      <img src="/Users/Borski/Desktop/Web apps/homepage/contact.jpg" alt="Bird" width="1350px" height="773px" />
+    </div>
+  </body>
+</html>
+
+
